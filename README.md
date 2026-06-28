@@ -10,7 +10,7 @@ Netflix inspired Jellyfin Theme
 # Collections Page with Gray Triangular Indicator on Top Right of the Poster
 <img width="1920" height="1080" alt="Collection" src="https://github.com/user-attachments/assets/1f510ca8-2360-4d17-8338-2df7392b72e8" />
 
-# Virsion Indicator as a Red Triangule on the Top Left of the Poster
+# Version Indicator as a Red Triangule on the Top Left of the Poster
 <img width="1920" height="1080" alt="Version_Page" src="https://github.com/user-attachments/assets/bf9fa79b-819c-47e4-baef-a1a4a669951b" />
 
 # For Background and Fonts
