@@ -17,5 +17,5 @@ Netflix inspired Jellyfin Theme
 Copy the "img" and "fonts" folder to the assets folder of jellyfin install location.
 
 # Implimentation and Edit
-Copy the CSS code from the CSS.text file to Dashboard -> Branding -> Custom CSS Code
+Copy the CSS code from the CSS.txt file to Dashboard -> Branding -> Custom CSS Code
 You are free to edit the project.
