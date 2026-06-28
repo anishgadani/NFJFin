@@ -15,7 +15,7 @@ Netflix inspired Jellyfin Theme
 
 # Movie Discription Page
 <img width="1920" height="1080" alt="Screenshot 2026-06-28 181653" src="https://github.com/user-attachments/assets/889e8984-ec2b-408e-b5f7-d044f3e31339" />
-With Movie Logo and Full Page Backdrop
+With Movie Poster and Full Page Backdrop
 
 # For Background and Fonts
 Copy the "img" and "fonts" folder to the assets directory of jellyfin install location.
