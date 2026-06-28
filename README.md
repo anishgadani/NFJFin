@@ -18,3 +18,6 @@ Copy the "img" and "fonts" folder to the assets directory of jellyfin install lo
 
 # Implimentation and Edit
 Copy the CSS code from the CSS.txt file to Dashboard -> Branding -> Custom CSS Code. <br> You are free to edit the project.
+
+# For Docker Installation
+Search "Docker Installation Guide" on Gemini AI or Copilot for latest procedure.
