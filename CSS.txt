@@ -1,0 +1,1438 @@
+/*Variables*/
+
+:root {
+  --deftraback: rgba(229, 9, 20, 0.2) !important;
+  --rounding: 3px;
+  --accent: #e50914;
+}
+
+/*Highlight*/
+
+::-moz-selection {
+  background: var(--accent);
+  text-shadow: none;
+}
+
+::selection {
+  background: var(--accent);
+  text-shadow: none;
+}
+
+.force-scroll {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+/* General focus element color */
+
+.layout-tv .paper-icon-button-light.show-focus:focus {
+  color: var(--accent) !important;
+}
+
+.emby-button.show-focus:focus {
+  background: var(--accent) !important;
+}
+
+/*fieldset*/
+
+fieldset.verticalSection.verticalSection-extrabottompadding {
+  border-radius: var(--rounding);
+  border-color: #4d4d4d;
+}
+
+/*Square Cards and Portrait Cards*/
+
+#loginPage .squareCard {
+  width: 50% !important;
+  background: rgb(20, 20, 20) !important;
+  transform: none !important;
+}
+
+#loginPage .cardText {
+  opacity: 1;
+}
+
+.emby-input:focus,
+.emby-textarea:focus,
+.emby-select:focus {
+  border-color: var(--accent) !important;
+  transform: none !important;
+}
+
+.selectArrowContainer {
+  top: 0.9em;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+#itemDetailPage
+  button.cardImageContainer.coveredImage.cardContent.itemAction.lazy.blurhashed.lazy-image-fadein-fast {
+  border-radius: var(--rounding);
+}
+
+/*cardbox border-radius change*/
+
+#indexPage
+  button.cardImageContainer.cardContent.itemAction.lazy.blurhashed.lazy-image-fadein-fast,
+.emby-scroller button.cardImageContainer.coveredImage.cardContent,
+.childrenItemsContainer button.cardImageContainer.coveredImage.cardContent,
+.nextUpItems
+  button.cardImageContainer.cardContent.itemAction.lazy.blurhashed.lazy-image-fadein-fast,
+.vertical-wrap button.cardImageContainer.coveredImage.cardContent,
+.emby-scroller button.cardImageContainer {
+  border-radius: var(--rounding) var(--rounding) 0px 0px !important;
+}
+
+.cardBox:not(.visualCardBox) .cardPadder,
+.cardContent-shadow {
+  box-shadow: none;
+}
+
+.checkboxOutline {
+  background: #737373 !important;
+  border: none !important;
+}
+
+span.material-icons.checkboxIcon.checkboxIcon-checked.check {
+  background: #eee;
+  color: black;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+}
+
+/*Theming video page*/
+
+.videoOsdBottom {
+  font-size: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.75), transparent);
+}
+
+.skinHeader-withBackground.osdHeader {
+  transition: opacity 0.3s ease-out;
+  position: relative;
+  z-index: 1;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.75),
+    transparent
+  ) !important;
+  color: #eee;
+  height: 7.5em;
+  pointer-events: none;
+}
+
+.osdControls .flex.flex-direction-row.align-items-center {
+  grid-template-areas: "one two" "three three";
+}
+
+.osdControls .flex.flex-direction-row.align-items-center > *:nth-child(1) {
+  grid-area: one;
+  justify-self: flex-start;
+}
+
+.osdControls .flex.flex-direction-row.align-items-center > *:nth-child(2) {
+  grid-area: three;
+}
+
+.osdControls .flex.flex-direction-row.align-items-center > *:nth-child(3) {
+  grid-area: two;
+  justify-self: flex-end;
+  padding-right: 0.5em;
+}
+
+.layout-desktop .osdControls {
+  max-width: 100%;
+}
+
+.mdl-slider::-webkit-slider-thumb {
+  background: var(--accent);
+}
+
+/*Theming Indicators*/
+
+.playedIndicator,
+.countIndicator 
+{
+  border-radius: 0;
+  box-shadow: none;
+  padding: 0 0 25px 25px;
+}
+
+.cardIndicators {
+  right: 0;
+  top: 2.5;
+}
+
+.mediaSourceIndicator
+{
+  border-radius: 0;
+  box-shadow: none;
+  padding: 0px 25px 25px 0px;
+}
+
+.mediaSourceIndicator
+{
+  background: linear-gradient(135deg, rgba(229, 9, 20) 50%, transparent 50%);
+}
+
+button.emby-tab-button.emby-button.emby-tab-button-active:hover {
+  color: var(--accent) !important;
+}
+
+.emby-tab-button.show-focus:focus,
+.emby-tab-button:hover {
+  color: var(--accent) !important;
+}
+
+.countIndicator,
+.fullSyncIndicator,
+.playedIndicator {
+  background: linear-gradient(-135deg, rgba(40, 40, 40) 50%, transparent 50%);
+}
+
+button.emby-tab-button.emby-button.emby-tab-button-active:hover {
+  color: var(--accent) !important;
+}
+
+.emby-tab-button.show-focus:focus,
+.emby-tab-button:hover {
+  color: var(--accent) !important;
+}
+
+/*Login Page*/
+
+.skinHeader.semiTransparent.noHeaderRight {
+  background: transparent !important;
+}
+
+div#loginPage {
+  margin-top: 0 !important;
+  overflow: hidden scroll;
+}
+
+#loginPage h1::after {
+  content: "Sign In";
+  font-size: 32px;
+}
+
+#loginPage h1 {
+  font-weight: 700;
+  font-size: 0;
+  margin-bottom: 21.44px;
+  margin-top: 32px !important;
+  text-align: left;
+}
+
+.inputContainer {
+  margin-bottom: 1.8em;
+  margin-top: 1.8em;
+}
+
+#loginPage .padded-left.padded-right.padded-bottom-page {
+  background: #000000bf;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  margin: 0;
+  position: absolute;
+  border-radius: 10px;
+  width: 30vw;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  padding: 3em !important;
+  max-width: 24em;
+}
+
+#loginPage .readOnlyContent {
+  padding: 0 !important;
+  width: 100% !important;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.manualLoginForm {
+  height: 100%;
+  width: 100%;
+}
+
+#loginPage .inputContainer {
+  background: #333;
+  border-radius: var(--rounding);
+  height: 4em;
+  position: relative;
+}
+
+#loginPage .inputLabel.inputLabelFocused,
+#loginPage .inputLabel:not(.inputLabel-float) {
+  font-size: 0.8em;
+  left: 4%;
+  top: 4%;
+  transform: none;
+}
+
+.visualLoginForm {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+#divUsers {
+  flex-flow: revert;
+  overflow: scroll visible;
+  justify-content: flex-start;
+}
+
+#loginPage .emby-input {
+  height: 100%;
+  border: none;
+  background: transparent !important;
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+  box-shadow: none !important;
+  padding: 4% !important;
+  font-size: 1.1em;
+  border: none !important;
+}
+
+#loginPage .inputLabel {
+  position: absolute;
+  top: 50%;
+  left: 4%;
+  transform: translateY(-50%);
+  font-size: 1.5em;
+  font-weight: 300;
+  transition: 0.2s ease;
+  color: #8c8c8c;
+}
+
+#loginPage .inputContainer:focus,
+#loginPage .inputContainer:focus-within {
+  background: #454545;
+}
+
+.layout-mobile #loginPage .padded-left.padded-right.padded-bottom-page {
+  width: 90vw !important;
+  max-width: 90vw !important;
+  height: 90vh !important;
+  background: transparent;
+}
+
+.layout-mobile #loginPage {
+  background: linear-gradient(to left, #000000bf, #000000bf),
+    url(./assets/img/Background.jpg) !important;
+  background-size: cover !important;
+}
+
+@media (orientation: landscape) {
+  .layout-mobile #loginPage .padded-left.padded-right.padded-bottom-page {
+    width: 90vh !important;
+    max-width: 90vh !important;
+    height: -webkit-fit-content !important;
+    height: -moz-fit-content !important;
+    height: fit-content !important;
+    transform: translateX(-50%);
+    top: 0;
+  }
+}
+
+/*Login background with radial gradient overlay to make it look like netflix login*/
+
+#loginPage {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.75), transparent 20%),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.75), transparent 20%),
+    linear-gradient(to left, rgba(0, 0, 0, 0.75), transparent 20%),
+    linear-gradient(to right, rgba(0, 0, 0, 0.75), transparent 20%),
+    url(./assets/img/Background.jpg) !important;
+  background-size: cover !important;
+}
+
+/*video Page*/
+
+div#videoOsdPage {
+  overflow: hidden !important;
+  margin-top: 0 !important;
+}
+
+.mdl-slider-background-lower {
+  background-color: var(--accent) !important;
+}
+
+.sliderBubble {
+  background: var(--deftraback) !important;
+  border-radius: 10px;
+}
+
+/*Scroll Bar theme*/
+
+::-webkit-scrollbar-thumb {
+  background: #505050 !important;
+  border-radius: 10px !important;
+}
+
+.page {
+  padding-bottom: 0 !important;
+}
+
+::-webkit-scrollbar {
+  width: 10px !important;
+  height: 10px !important;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0) !important;
+  box-shadow: none !important;
+}
+
+::-webkit-scrollbar-track-piece {
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+
+.button-link {
+  color: white !important;
+}
+
+/*Fonts */
+@font-face {
+  font-family: "Netflix Sans";
+  font-weight: 100;
+  font-display: optional;
+  src: url(./assets/fonts/NetflixSans_W_Th.woff2)
+      format("woff2"),
+    url(./assets/fonts/NetflixSans_W_Th.woff)
+      format("woff");
+}
+@font-face {
+  font-family: "Netflix Sans";
+  font-weight: 300;
+  font-display: optional;
+  src: url(./assets/fonts/NetflixSans_W_Lt.woff2)
+      format("woff2"),
+    url(./assets/fonts/NetflixSans_W_Lt.woff)
+      format("woff");
+}
+@font-face {
+  font-family: "Netflix Sans";
+  font-weight: 400;
+  font-display: optional;
+  src: url(./assets/fonts/NetflixSans_W_Rg.woff2)
+      format("woff2"),
+    url(./assets/fonts/NetflixSans_W_Rg.woff)
+      format("woff");
+}
+@font-face {
+  font-family: "Netflix Sans";
+  font-weight: 700;
+  font-display: optional;
+  src: url(./assets/fonts/NetflixSans_W_Md.woff2)
+      format("woff2"),
+    url(./assets/fonts/NetflixSans_W_Md.woff)
+      format("woff");
+}
+@font-face {
+  font-family: "Netflix Sans";
+  font-weight: 800;
+  font-display: optional;
+  src: url(./assets/fonts/NetflixSans_W_Bd.woff2)
+      format("woff2"),
+    url(./assets/fonts/NetflixSans_W_Bd.woff)
+      format("woff");
+}
+@font-face {
+  font-family: "Netflix Sans";
+  font-weight: 900;
+  font-display: optional;
+  src: url(./assets/fonts/NetflixSans_W_Blk.woff2)
+      format("woff2"),
+    url(./assets/fonts/NetflixSans_W_Blk.woff)
+      format("woff");
+}
+body,
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Netflix Sans", sans-serif !important;
+}
+
+/*Firefox*/
+
+.videoSubtitles {
+  font-family: "Netflix Sans", sans-serif !important;
+  font-weight: 700 !important;
+  text-shadow: 0px 0px 8px rgba(0, 0, 0, 1) !important;
+}
+
+/*Chrome, Edge Chromium & Saffari*/
+
+video::-webkit-media-text-track-display {
+  font-family: "Netflix Sans", sans-serif !important;
+  font-weight: 700 !important;
+  text-shadow: rgba(0, 0, 0, 1) 0em 0em 0.2em !important;
+}
+
+/*backup for subtitles*/
+
+video::-webkit-media-text-track-container {
+  font-family: "Netflix Sans", sans-serif !important;
+  font-weight: 700 !important;
+  text-shadow: rgba(0, 0, 0, 1) 0em 0em 0.2em !important;
+}
+
+video:cue {
+  font-family: "Netflix Sans", sans-serif !important;
+  font-weight: 700 !important;
+  text-shadow: rgba(0, 0, 0, 1) 0em 0em 0.2em !important;
+}
+
+/*Rounded corners on pretty much everything-Source Monochromic*/
+
+.formDialogHeader {
+  border-top-left-radius: var(--rounding);
+  border-top-right-radius: var(--rounding);
+}
+
+.formDialogFooter {
+  border-bottom-left-radius: var(--rounding);
+  border-bottom-right-radius: var(--rounding);
+}
+
+.cardOverlayContainer {
+  border-radius: var(--rounding) !important;
+}
+
+.toast,
+.paperList,
+.cardContent,
+.sessionNowPlayingInnerContent,
+.cardImage,
+.fab,
+.multiSelectCheckboxOutline,
+.itemSelectionPanel,
+.cardContent-button,
+.cardContent-shadow,
+.cardImageContainer,
+.cardPadder,
+.listItemButton,
+.headerButton,
+.paper-icon-button-light,
+.innerCardFooter,
+.blurhash-canvas,
+.actionSheetMenuItem:hover,
+.dialog,
+.listItemIcon,
+.listItem-border,
+.button-flat,
+.visualCardBox,
+.checkboxOutline,
+.emby-select-withcolor,
+.chapterThumbTextContainer,
+.chapterThumbContainer,
+.chapterThumb,
+.emby-input,
+.emby-textarea,
+.emby-select-withcolor,
+.cardOverlayButtonIcon,
+.subtitleappearance-preview.flex.align-items-center.justify-content-center {
+  border-radius: var(--rounding) !important;
+}
+
+.osdPoster img {
+  border-radius: var(--rounding);
+  border: none;
+}
+
+.mdl-slider::-moz-range-thumb {
+  border-radius: var(--rounding);
+}
+
+.mdl-slider::-ms-thumb {
+  border-radius: var(--rounding);
+}
+
+.cardContent-button,
+.cardContent-shadow,
+.cardOverlayButton-hover,
+.cardOverlayContainer,
+.cardPadder,
+.listItemButton,
+.headerButton,
+.paper-icon-button-light,
+.innerCardFooter,
+.blurhash-canvas,
+.actionSheetMenuItem:hover,
+.dialog {
+  border-radius: var(--rounding) !important;
+}
+
+div[data-role="controlgroup"] a[data-role="button"]:first-child {
+  border-bottom-left-radius: var(--rounding);
+  border-top-left-radius: var(--rounding);
+}
+
+div[data-role="controlgroup"] a[data-role="button"]:last-child {
+  border-bottom-right-radius: var(--rounding);
+  border-top-right-radius: var(--rounding);
+}
+
+/*Rounded corners and square hover buttons*/
+
+.cardContent-button,
+.cardContent-shadow,
+.cardOverlayContainer,
+.cardPadder,
+.listItemImage,
+.listItemImageButton,
+.listItemButton,
+.headerButton,
+.paper-icon-button-light,
+.innerCardFooter,
+.blurhash-canvas,
+.actionSheetMenuItem:hover,
+.dialog {
+  border-radius: var(--rounding) !important;
+}
+
+.dialog {
+  background-color: rgb(20, 20, 20);
+  overflow: auto !important;
+}
+
+.formDialogContent {
+  height: 100%;
+}
+
+/* Adjust both "size-adjust" and "size" to modify size */
+
+.headerTabs.sectionTabs {
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 109%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  font-size: 100%;
+}
+
+.emby-tab-button.emby-tab-button-active::after {
+  transform: scale(1);
+}
+
+.emby-tab-button::after {
+  content: "";
+  width: calc(100% - 2em);
+  position: absolute;
+  height: 4px;
+  background: var(--accent);
+  border-radius: 10px;
+  transform: scaleX(0);
+  transition: 0.2s;
+  left: 1em;
+  bottom: 1.5em;
+  right: 1em;
+}
+
+@media (min-width: 100em) {
+  .headerTabs {
+    margin-top: -4.0em;
+  }
+}
+
+.emby-tab-button {
+  position: relative;
+  padding: 2em;
+  color: white;
+  font-size: 1.1em;
+  -webkit-filter: drop-shadow(2px 4px 6px rgb(20, 20, 20));
+  filter: drop-shadow(2px 4px 6px rgb(20, 20, 20));
+}
+
+.emby-tab-button:hover::after {
+  transform: scale(1);
+}
+
+.pageTitle {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+/* Top menu transparency */
+
+.skinHeader {
+  background: linear-gradient(
+    to bottom,
+    rgb(5, 5, 5),
+    rgb(20, 20, 20)
+  ) !important;
+}
+
+.skinHeader.focuscontainer-x.skinHeader-withBackground.skinHeader-blurred.semiTransparent {
+  background: linear-gradient(
+    to bottom,
+    rgb(20, 20, 20),
+    transparent
+  ) !important;
+  box-shadow: none !important;
+  transform: none !important;
+}
+
+body:not(.withSectionTabs) > .skinHeader {
+  background: linear-gradient(
+    to bottom,
+    rgba(20, 20, 20),
+    transparent
+  ) !important;
+  transform: none !important;
+}
+
+.upNextDialog {
+  box-shadow: 0 0 8px 5px black;
+}
+
+.upNextDialog-poster-img {
+  border-radius: var(--rounding);
+}
+
+/*Minimalistic play buttons*/
+
+.cardOverlayFab-primary {
+  background-color: #00000000;
+}
+
+.cardOverlayButtonIcon {
+  background-color: #00000000 !important;
+}
+
+.cardOverlayContainer {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 5px 5px 0px 0px !important;
+}
+
+/*Episode cards*/
+
+.listItem[data-type="Audio"] .mediaInfoItem::after {
+  display: none !important;
+}
+
+.listItem[data-type="Audio"] .listItem-indexnumberleft {
+  padding-left: 5px;
+}
+
+#itemDetailPage .vertical-list {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  padding: 0;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  justify-content: space-evenly;
+  -webkit-box-orient: horizontal;
+  margin: -6px;
+  width: 100%;
+}
+
+#itemDetailPage .emby-select {
+  box-shadow: none !important;
+}
+
+.listItemImage-large-tv {
+  width: 100%;
+  height: 31vh;
+}
+
+.layout-tv #itemDetailPage .itemName.infoText.parentNameLast {
+  display: block;
+}
+
+.listItem-withContentWrapper:hover
+  .listItemImageButton.itemAction.paper-icon-button-light {
+  opacity: 100%;
+}
+
+@media (max-width: 1291px) {
+  #itemDetailPage .vertical-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 991px) {
+  #itemDetailPage .vertical-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.listItem-withContentWrapper {
+  transition: none;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  max-width: 100%;
+  margin: 6px;
+  border-radius: var(--rounding);
+  overflow: hidden;
+  padding: 0;
+  overflow: hidden;
+  -webkit-border-radius: var(--rounding);
+  -moz-border-radius: var(--rounding);
+  -ms-border-radius: var(--rounding);
+  -o-border-radius: var(--rounding);
+}
+
+.listItem-withContentWrapper:hover {
+  background: transparent;
+}
+
+.listItem-content {
+  height: 100%;
+}
+
+div:not(.paperList) .listItem {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  border-radius: 0;
+}
+
+.listItem-content {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: center;
+}
+.listItemImage.listItemImage-large.itemAction.lazy {
+  height: 14rem;
+  width: 100%;
+  padding: 0 !important;
+  margin: 0 !important;
+  top: 0;
+  left: 0;
+  border-radius: 0 !important;
+  background-size: cover;
+}
+.listItemImage.listItemImage-large::after {
+  content: "";
+  background-image: -moz-
+    oldlinear-gradient(bottom, rgba(0, 0, 0, 0.8) 5%, rgba(0, 0, 0, 0) 95%);
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8) 5%,
+    rgba(0, 0, 0, 0) 95%
+  );
+  position: absolute;
+  bottom: 0;
+  right: -0.5px;
+  left: 0;
+  height: 55px;
+}
+.layout-mobile #itemDetailPage .vertical-list {
+  grid-template-columns: 100%;
+  width: 90vw;
+  margin: 0 auto !important;
+}
+.listItemIndicators {
+  top: 0;
+  right: 0;
+}
+.listItem-overview {
+  font-size: 12px !important;
+  line-height: 18px;
+  font-weight: 400 !important;
+  color: #a3a3a3 !important;
+}
+.listItemBodyText {
+  margin: 0 !important;
+  font-size: 16px;
+  font-weight: 700;
+}
+.secondary.listItem-overview.listItemBodyText {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.layout-mobile .listItem-bottomoverview {
+  padding: 0 10px;
+}
+.layout-mobile .itemsContainer {
+  padding: 0 10px;
+}
+.layout-mobile .itemsContainer > *:last-child {
+  padding-right: 10px !important;
+}
+.listItemBody.itemAction {
+  padding: 0 5px;
+}
+.card[data-type="CollectionFolder"] .cardText {
+  height: 3rem;
+}
+.defaultCardBackground {
+  background: var(--deftraback) !important;
+}
+#itemDetailPage::-webkit-scrollbar-track-piece {
+  background: rgb(20, 20, 20);
+}
+.listItemImageButton.itemAction.paper-icon-button-light {
+  opacity: 0;
+  color: var(--accent);
+  transition: all 0.2s;
+}
+.layout-mobile .listItemImageButton.itemAction.paper-icon-button-light {
+  opacity: 100% !important;
+}
+.layout-tv #itemDetailPage .vertical-list {
+  grid-template-columns: 1fr;
+}
+.layout-tv .emby-scroller {
+  overflow: hidden !important;
+}
+.layout-tv .listItem[data-type="Episode"] {
+  padding: 7.5px !important;
+}
+.listItemImage-large-tv {
+  width: 18% !important;
+  height: auto !important;
+  aspect-ratio: 16 / 9 !important;
+}
+.layout-tv .listItemBodyText {
+  font-size: 100% !important;
+}
+.layout-tv .listItemBodyText.listItem-overview {
+  line-height: 1.2;
+}
+.layout-tv .listItemImage.listItemImage-large::after {
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: auto;
+  width: 55px;
+  height: 100%;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.8) 5%, transparent 95%);
+}
+.layout-tv .listItem:focus {
+  transform: none !important;
+  background: none !important;
+}
+
+/* My Media Styling */
+.section0 button.itemAction.textActionButton {
+  height: 3.5em;
+  background: rgba(0, 0, 0, 0);
+  border-radius: var(--rounding);
+}
+.section0 .overflowBackdropCard,
+.section0 .overflowSmallBackdropCard {
+  max-width: 90vw;
+}
+.section0 .emby-scroller {
+  margin-right: 0;
+}
+@media (max-width: 1px) and (orientation: landscape) {
+  .section0 {
+    display: none;
+  }
+}
+.section0 .sectionTitle {
+  padding-top: 60px !important;
+}
+@media (max-width: 1px) {
+  .section0 {
+    display: none;
+  }
+}
+.raised.homeLibraryButton:hover {
+  transition: -webkit-filter 1s;
+  transition: filter 1s;
+  transition: filter 1s, -webkit-filter 1s;
+}
+.raised.homeLibraryButton {
+  transition: -webkit-filter 1s;
+  transition: filter 1s;
+  transition: filter 1s, -webkit-filter 1s;
+}
+.homeLibraryButton {
+  min-width: 12em;
+  margin: 0.4em;
+}
+
+/*Theming for the dasboard*/
+.paperList,
+.visualCardBox {
+  background-color: transparent;
+}
+.listItemIcon {
+  border-radius: 5px !important;
+}
+.listItemIcon:not(.listItemIcon-transparent) {
+  background-color: transparent !important;
+  color: var(--accent);
+}
+.listItem-border {
+  border-color: transparent !important;
+}
+.backgroundContainer {
+  background-color: #101010;
+}
+.raised {
+  background: var(--accent);
+}
+.headerButton.headerButtonRight.paper-icon-button-light.headerUserButtonRound {
+  border-radius: var(--rounding) !important;
+}
+.dashboardSections {
+  display: grid;
+  grid-template-areas: "one one two" " three three three";
+  grid-auto-columns: 1fr;
+  grid-gap: 30px;
+}
+.dashboardColumn:nth-child(1) {
+  grid-area: one;
+}
+.dashboardColumn:nth-child(3) {
+  grid-area: two;
+}
+.dashboardColumn:nth-child(2) {
+  grid-area: three;
+}
+.activeDevices .card {
+  transform: none !important;
+  border: 5px solid rgb(20, 20, 20);
+  border-radius: 10px !important;
+}
+.dashboardSection {
+  background: black;
+  border-radius: 20px;
+  padding: 20px;
+}
+.dashboardColumn.dashboardColumn-2-60.dashboardColumn-3-46 .paperList {
+  font-family: monospace;
+  font-size: 1.5em;
+  padding: 0 !important;
+  color: #ffffffa3;
+}
+@media (max-width: 1291px) {
+  .dashboardSections {
+    grid-template-areas: "one" "two" "three";
+  }
+}
+
+/*Theming Playback data info*/
+.playerStats {
+  background: rgb(20, 20, 20);
+  box-shadow: 0 0 8px black;
+}
+
+/* Chapters */
+.chapterCard .innerCardFooter {
+  background: linear-gradient(0deg, black, transparent);
+  width: 100%;
+  bottom: 0;
+  margin: 0 !important;
+}
+.chapterCard .innerCardFooter > .cardText:first-child {
+  float: left;
+}
+.chapterCard .innerCardFooter > .cardText:last-child {
+  float: right;
+}
+
+/* Spinner */
+.mdl-spinner__layer.mdl-spinner__layer-1.mdl-spinner__layer-1-active,
+.mdl-spinner__layer.mdl-spinner__layer-2.mdl-spinner__layer-2-active, 
+.mdl-spinner__layer.mdl-spinner__layer-3.mdl-spinner__layer-3-active, 
+.mdl-spinner__layer.mdl-spinner__layer-4.mdl-spinner__layer-4-active {
+  border-color: var(--accent);
+}
+
+/*video Page*/
+div#videoOsdPage {
+  overflow: hidden !important;
+  margin-top: 0 !important;
+}
+
+.mdl-slider-background-lower {
+  background-color: var(--accent) !important;
+}
+
+.sliderBubble {
+  background: var(--deftraback) !important;
+  border-radius: 10px;
+}
+
+/* Netflix Background for Forgot Password Page */
+#forgotPasswordPage {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.75), transparent 20%),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.75), transparent 20%),
+    linear-gradient(to left, rgba(0, 0, 0, 0.75), transparent 20%),
+    linear-gradient(to right, rgba(0, 0, 0, 0.75), transparent 20%),
+    url(./assets/img/Background.jpg) !important;
+  background-size: cover !important;
+  background-position: center !important;
+  overflow: hidden;
+}
+
+/* Netflix-style transparent rectangle for Forgot Password page */
+#forgotPasswordPage .padded-left.padded-right.padded-bottom-page {
+  background: #000000bf !important; /* same as login */
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  border-radius: 10px;
+  width: 30vw;
+  max-width: 24em;
+  height: auto;
+  padding: 3em !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Mobile transparent rectangle */
+.layout-mobile #forgotPasswordPage .padded-left.padded-right.padded-bottom-page {
+  width: 90vw !important;
+  max-width: 90vw !important;
+  height: auto !important;
+  background: #000000bf !important;
+  padding: 2em !important;
+}
+
+/* Netflix Red Checkbox Outline */
+.checkboxOutline,
+.multiSelectCheckboxOutline {
+  background: transparent !important;
+  border: 2px solid #e50914 !important;
+  border-radius: 4px !important;
+}
+
+/* Hover effect (optional but Netflix-like) */
+.checkboxOutline:hover,
+.multiSelectCheckboxOutline:hover {
+  border-color: #ff0f1f !important;
+  filter: brightness(1.2);
+}
+
+/* 2. Selection Highlight */
+::selection,
+::-moz-selection {
+  background: var(--accent) !important;
+  color: white !important;
+  text-shadow: none !important;
+}
+
+/* 3. Buttons, Tabs, Focus States */
+.emby-button.show-focus:focus,
+.button-flat:hover,
+.button-flat:focus,
+.emby-tab-button:hover,
+.emby-tab-button.show-focus:focus,
+.emby-tab-button.emby-tab-button-active {
+  color: var(--accent) !important;
+}
+
+.paper-icon-button-light.show-focus:focus {
+  color: var(--accent) !important;
+}
+
+/* 4. Slider + Progress Accent */
+.mdl-slider::-webkit-slider-thumb,
+.mdl-slider-background-lower {
+  background: var(--accent) !important;
+}
+
+.sliderBubble {
+  background: var(--accent-soft) !important;
+}
+
+/* 5. Input Focus Accent */
+.emby-input:focus,
+.emby-textarea:focus,
+.emby-select:focus {
+  border-color: var(--accent) !important;
+}
+
+.inputLabel.inputLabelFocused,
+.selectLabel.selectLabelFocused,
+.textareaLabel.textareaLabelFocused {
+  color: var(--accent) !important;
+}
+
+/* 6. Card Hover Animation */
+.card {
+  transition: transform var(--hover-speed) var(--hover-curve),
+              box-shadow var(--hover-speed) var(--hover-curve),
+              filter var(--hover-speed) var(--hover-curve);
+}
+
+.card:hover,
+.card:focus {
+  transform: scale(var(--hover-scale)) !important;
+  box-shadow: var(--hover-glow);
+  filter: brightness(1.05);
+  background-color: #101010 !important;
+}
+
+/* 7. Card Text Reveal */
+.cardText {
+  opacity: 1;
+  transition: opacity var(--hover-speed) ease-out;
+}
+
+.card:hover .cardText,
+.card:focus .cardText {
+  opacity: 1;
+}
+
+/* 8. Image Zoom-In */
+.cardImageContainer img,
+.cardScalable img {
+  transition: transform var(--hover-speed) var(--hover-curve);
+}
+
+.card:hover img,
+.card:focus img {
+  transform: scale(1.08);
+}
+
+/* 9. Overlay Fade-In */
+.cardOverlayButton {
+  opacity: 0;
+  transition: opacity var(--hover-speed) ease-out,
+              transform var(--hover-speed) var(--hover-curve);
+  transform: translateY(10px);
+}
+
+.card:hover .cardOverlayButton,
+.card:focus .cardOverlayButton {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* 10. Overlay Accent Borders */
+.cardOverlayButton[data-action="resume"],
+.layout-mobile .cardOverlayButton {
+  border: 1px solid var(--accent) !important;
+}
+
+/* 11. Button Hover Animation */
+.emby-button,
+.button-flat,
+.paper-icon-button-light {
+  transition: color var(--hover-speed) var(--hover-curve),
+              background var(--hover-speed) var(--hover-curve),
+              transform var(--hover-speed) var(--hover-curve);
+}
+
+.emby-button:hover,
+.button-flat:hover,
+.paper-icon-button-light:hover {
+  transform: scale(1.05);
+  filter: brightness(1.15);
+}
+
+/* 12. Tab Hover Animation */
+.emby-tab-button {
+  transition: color var(--hover-speed) var(--hover-curve),
+              transform var(--hover-speed) var(--hover-curve);
+}
+
+.emby-tab-button:hover {
+  transform: scale(1.08);
+}
+
+/* 13. Focus Ring (Netflix TV UI Style) */
+*:focus-visible {
+  outline: 3px solid var(--accent) !important;
+  outline-offset: 3px !important;
+  transition: outline var(--hover-speed) var(--hover-curve);
+}
+
+/* 14. Mobile Safety (Disable Scaling) */
+.layout-mobile .card:hover,
+.layout-mobile .card:focus {
+  transform: none !important;
+  box-shadow: none !important;
+}
+
+/* 1. Force backdrop image to fill the entire viewport background */
+.backdropContainer {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    background-size: cover !important;
+    background-position: center center !important;
+    opacity: 1 !important;
+    z-index: -2 !important;
+}
+
+/* 2. Strip away the solid gray background panels across the app */
+.backgroundContainer, 
+.backgroundContainer.withBackdrop,
+.mainDrawer,
+.page,
+.itemDetailPage,
+.skinHeader-withBackground {
+    background-color: transparent !important;
+    background: transparent !important;
+}
+
+/* 3. Apply a dark tint overlay to dim the bright backdrop image */
+.itemBackdrop::after {
+    content: "" !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    background-color: rgba(0, 0, 0, 0) !important; /* Increase to 0.80 if it is still too bright */
+    z-index: -1 !important;
+}
+
+/* 4. Keep metadata highly readable with a frosted glass info box */
+.detailPagePrimaryContainer {
+    background: rgba(16, 16, 16, 0.65) !important;
+    backdrop-filter: blur(20px) !important;
+    -webkit-backdrop-filter: blur(20px) !important;
+    border-radius: 12px !important;
+    padding: 25px !important;
+    margin: 20px !important;
+}
+
+/* 5. Prevent posters and detail images from clipping on wide screens */
+.detailImageContainer .card {
+    max-height: initial !important;
+}
+/* Adds a matching tint and blur to the sliding side drawer menu */
+.mainDrawer {
+    background-color: rgba(15, 15, 15, 0.85) !important;
+    backdrop-filter: blur(20px) !important;
+    -webkit-backdrop-filter: blur(20px) !important;
+}
+
+/* Add a smooth transition effect to all card items */
+.card {
+    transition: transform 0.25s ease-in-out, box-shadow 0.25s ease-in-out !important;
+    position: relative;
+    z-index: 1;
+}
+
+/* Add a smooth transition effect and remove background colors */
+.card {
+    transition: transform 0.25s ease-in-out, box-shadow 0.25s ease-in-out, border-color 0.25s ease-in-out !important;
+    position: relative;
+    z-index: 1;
+    border: 2px solid transparent !important; /* Pre-allocates space to prevent layout shifting */
+    border-radius: 6px !important; /* Matches standard poster corner rounding */
+    background: transparent !important; /* Makes the entire poster card background transparent */
+    background-color: transparent !important;
+}
+
+/* Ensure inner containers inherit the transparent background */
+.cardBox, .cardScalable, .cardPadder {
+    background: transparent !important;
+    background-color: transparent !important;
+    box-shadow: none !important; /* Removes default underlying card shadows */
+}
+/* Add a smooth transition effect and remove background colors */
+.card {
+    transition: transform 0.25s ease-in-out, box-shadow 0.25s ease-in-out !important;
+    position: relative;
+    z-index: 1;
+    border-radius: 6px !important; /* Matches standard poster corner rounding */
+    background: transparent !important; /* Makes the entire poster card background transparent */
+    background-color: transparent !important;
+    border: none !important; /* Completely removes the sharp outer border line */
+}
+
+/* Ensure inner containers inherit the transparent background */
+.cardBox, .cardScalable, .cardPadder {
+    background: transparent !important;
+    background-color: transparent !important;
+    box-shadow: none !important; /* Removes default underlying card shadows */
+}
+
+/* Shape only the inner play button icon container into a circle */
+.cardOverlayButton[data-action="play"], 
+.cardOverlayFab-primary {
+    border-radius: 50% !important; /* Forces the play button background into a circle */
+    aspect-ratio: 1 / 1 !important; /* Ensures it stays perfectly symmetrical */
+}
+
+/* Add a smooth transition effect and remove background colors */
+.card {
+    transition: transform 0.25s ease-in-out, box-shadow 0.25s ease-in-out !important;
+    position: relative;
+    z-index: 1;
+    border-radius: 6px !important; /* Matches standard poster corner rounding */
+    background: transparent !important; /* Makes the entire poster card background transparent */
+    background-color: transparent !important;
+    border: none !important; /* Completely removes outer border lines */
+}
+
+/* Ensure inner containers inherit the transparent background */
+.cardBox, .cardScalable, .cardPadder {
+    background: transparent !important;
+    background-color: transparent !important;
+    box-shadow: none !important; /* Removes default underlying card shadows */
+}
+
+/* Scale up, lift, and add a clean dark drop shadow on hover or focus */
+.card:hover, .card:focus {
+    transform: scale(1.06) translateY(-4px) !important;
+    z-index: 10 !important; /* Ensures the hovered card stays on top */
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.7) !important; /* Clean dark drop shadow */
+}
+
+/* Keep the images clean and constrained during the animation */
+.cardImageContainer {
+    overflow: hidden !important;
+}
+
+/* Shape only the inner play button icon container into a circle */
+.cardOverlayButton[data-action="play"], 
+.cardOverlayFab-primary {
+    border-radius: 50% !important; /* Forces the play button background into a circle */
+    aspect-ratio: 1 / 1 !important; /* Ensures it stays perfectly symmetrical */
+}
+
+/* Adjust collection card sizes on standard desktop views */
+[data-type='BoxSet'] .cardScalable {
+    width: 100%; /* Adjust as necessary */
+    max-height: 100%; /* Limits the height to your preference */
+}
+
+/* Poster Size*/
+.portraitCard,
+.card.overflowPortraitCard,
+.collectionItems .card,
+.collectionItemsContainer .card {
+    width: 240px !important;
+    height: auto !important;
+}
+
+.collectionItems .cardImageContainer,
+.collectionItemsContainer .cardImageContainer {
+    width: 240px !important;
+    height: auto !important;
+}
+.collectionItems,
+.collectionItemsContainer {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 16px !important;  
+
+/* Increase or decrease spacing here */
+    row-gap: 16px !important;
+    column-gap: 16px !important;
+}
