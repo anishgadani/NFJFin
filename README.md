@@ -13,6 +13,10 @@ Netflix inspired Jellyfin Theme
 # Version Indicator as a Red Triangule on the Top Left of the Poster
 <img width="1920" height="1080" alt="Version_Page" src="https://github.com/user-attachments/assets/bf9fa79b-819c-47e4-baef-a1a4a669951b" />
 
+# Movie Discription Page
+<img width="1920" height="1080" alt="Screenshot 2026-06-28 181653" src="https://github.com/user-attachments/assets/889e8984-ec2b-408e-b5f7-d044f3e31339" />
+With Movie Logo and Full Page Backdrop
+
 # For Background and Fonts
 Copy the "img" and "fonts" folder to the assets directory of jellyfin install location.
 
