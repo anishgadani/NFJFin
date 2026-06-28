@@ -14,7 +14,7 @@ Netflix inspired Jellyfin Theme
 <img width="1920" height="1080" alt="Version_Page" src="https://github.com/user-attachments/assets/bf9fa79b-819c-47e4-baef-a1a4a669951b" />
 
 # For Background and Fonts
-Copy the "img" and "fonts" folder to the assets folder of jellyfin install location.
+Copy the "img" and "fonts" folder to the assets directory of jellyfin install location.
 
 # Implimentation and Edit
 Copy the CSS code from the CSS.txt file to Dashboard -> Branding -> Custom CSS Code
